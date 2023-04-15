@@ -175,5 +175,20 @@ public class Loops {
             }
             letter++;
         }
+
+
+        // 11. Print 1 to 10 and break the loop once you find the multiplication of 7 with a message "bye, see you tomorrow".
+        System.out.println("------");
+        System.out.println("Q11:");
+        int maxNumberToMultiply = 1;
+        while (maxNumberToMultiply <= 10){
+            System.out.println(maxNumberToMultiply + " * " + 1);
+            if(maxNumberToMultiply == 7){
+                System.out.println("bye, see you tomorrow");
+                break;
+            }
+            maxNumberToMultiply++;
+        }
+
     }
 }
