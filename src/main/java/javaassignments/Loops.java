@@ -75,7 +75,7 @@ public class Loops {
         }while(iDoWhileCounter <= 100);
 
 
-        // 6. print all odd and even numbers between 1 to 100
+        // 6. print all odd and even numbers between 1 and 100
         System.out.println("----------");
         System.out.println("Q6:");
         for (int q6Num = 1; q6Num <= 100; q6Num++){
@@ -84,6 +84,96 @@ public class Loops {
             }else{
                 System.out.println(q6Num + " is odd number");
             }
+        }
+
+       // 7. What will be the output of this program:
+//        int i = 1;
+//        while(i<=1){
+//            System.out.println("Hi Java"); // infinite loop because we do not increase a variable used in conditionll never end
+//        }
+
+        // 8. Print A-Z, a-z, 0-9 with the respective ASCII numbers the console one using while and for loop.
+        System.out.println("-------");
+        System.out.println("Q8:");
+
+        System.out.println("While loop:");
+
+        // Capital letters A-Z
+        int capLetterCounter = 65;
+        while(capLetterCounter <= 90){
+            System.out.println((char)capLetterCounter + " = " + capLetterCounter);
+            capLetterCounter++;
+        }
+
+        // small letters a-z
+        int smallLetterCounter = 97;
+        while (smallLetterCounter <= 122){
+            System.out.println((char) smallLetterCounter + " = " + smallLetterCounter);
+            smallLetterCounter++;
+        }
+
+        // numbers 0-9
+        int numbersCounter = 48;
+        while (numbersCounter <= 57){
+            System.out.println((char)numbersCounter + " = " + numbersCounter);
+            numbersCounter++;
+        }
+
+        // Capital Letters A-Z
+        System.out.println("For loop:");
+        for (char c = 'A'; c <= 'Z'; c++){
+            System.out.println(c + " = " + (int) c);
+        }
+
+        // small letters a-z
+        for (char c = 'a'; c <= 'z'; c++){
+            System.out.println(c + " = " + (int) c);
+        }
+
+        // numbers 0-9
+        for (char c = '0'; c <= '9'; c++){
+            System.out.println(c + " = " + (int) c);
+        }
+
+        // 9. Print the following series:
+        // 1.0 2.0 3.0 ...... 10.0
+        // 0 9 18 27 36 …99
+        System.out.println("------");
+        System.out.println("Q9:");
+        System.out.println("Print doubles:");
+        for (double d = 1.0; d <= 10.0; d++){
+            System.out.println(d);
+        }
+
+        System.out.println("Print integers:");
+        int num = 0;
+        while (num < 100){
+            System.out.println(num);
+            num++;
+        }
+
+        // 10. Print only vowels (aeiou) using for and while loop. Start the loop from ‘a‘ to ‘z‘.
+        System.out.println("-----");
+        System.out.println("Q10:");
+
+        System.out.println("For loop:");
+        for (char c = 'a'; c <= 'z'; c++){
+            if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
+                System.out.println("Vowel letter: " + c);
+            } else {
+                System.out.println(c);
+            }
+        }
+
+        System.out.println("While loop:");
+        char letter = 'a';
+        while (letter <= 'z'){
+            if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u'){
+                System.out.println("Vowel letter: " + letter);
+            } else{
+                System.out.println(letter);
+            }
+            letter++;
         }
     }
 }
