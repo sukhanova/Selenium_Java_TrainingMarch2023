@@ -89,7 +89,7 @@ public class Loops {
        // 7. What will be the output of this program:
 //        int i = 1;
 //        while(i<=1){
-//            System.out.println("Hi Java"); // infinite loop because we do not increase a variable used in conditionll never end
+//            System.out.println("Hi Java"); // infinite loop because we do not increase a variable used in conditional never end
 //        }
 
         // 8. Print A-Z, a-z, 0-9 with the respective ASCII numbers the console one using while and for loop.
@@ -152,7 +152,7 @@ public class Loops {
             num++;
         }
 
-        // 10. Print only vowels (aeiou) using for and while loop. Start the loop from ‘a‘ to ‘z‘.
+        // 10. Print only vowels (aeiou) using for and while loop. Start the loop from 'a' to 'z'.
         System.out.println("-----");
         System.out.println("Q10:");
 

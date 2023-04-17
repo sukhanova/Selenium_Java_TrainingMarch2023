@@ -16,6 +16,7 @@ public class LoopsConcept {
         // for loop
         System.out.println("---------");
         System.out.println("For loop:");
+        int indForLoop = 1;
         for(int index = 1; index <= 10; index++){
             System.out.println(index);
         }
