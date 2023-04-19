@@ -14,27 +14,42 @@ public class Array_ArrayList {
         * expected output: [1, 4, 5, 2, 3, 31, 2]
         * */
 
-        System.out.println("Question 1:");
-        // original array
+        // Solution #1:
+//        System.out.println("Question 1:");
+//        // original array
+//        int p[] = {1,4,5,2,3,22,31,2};
+//        System.out.println("Original array: "+ Arrays.toString(p));
+//        int pArrLength = p.length;
+//        int indexOfElemToRemove = 6;
+//
+//        // new array of the size 1 less than original array
+//        int newArray_p []= new int[pArrLength -1];
+//
+//        for (int index = 0; index < pArrLength; index++){
+//            if (index < indexOfElemToRemove){
+//                // copying all elenets to new array before elem to delete
+//                newArray_p[index] = p[index];
+//            }
+//            else {
+//                // copying the rest of elements after elem to delete
+//                newArray_p[index -1] = p[index];
+//            }
+//        }
+//        System.out.println("New array: " + Arrays.toString(newArray_p));
+
+        // Solution #2:
         int p[] = {1,4,5,2,3,22,31,2};
         System.out.println("Original array: "+ Arrays.toString(p));
-        int pArrLength = p.length;
-        int indexOfElemToRemove = 6;
+        int newArray_p []= new int[p.length -1];
 
-        // new array of the size 1 less than original array
-        int newArray_p []= new int[pArrLength -1];
-
-        for (int index = 0; index < pArrLength; index++){
-            if (index < indexOfElemToRemove){
-                // copying all elenets to new array before elem to delete
-                newArray_p[index] = p[index];
-            }
-            else {
-                // copying the rest of elements after elem to delete
-                newArray_p[index -1] = p[index];
+        int j = 0;
+        for (int i= 0; i < p.length; i++){
+            if(p[i] != 22){
+                newArray_p[j] = p[i];
+                j++;
             }
         }
-
         System.out.println("New array: " + Arrays.toString(newArray_p));
+
     }
 }
