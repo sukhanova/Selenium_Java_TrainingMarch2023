@@ -57,7 +57,7 @@ public class TimeComplexityConcept {
         // inner loop: (1+n+n+n)
         // (1+n+n+n)(1+n+n+n) --> (1+3n)(1+3n) --->1+3n+3n+9n^2---> 9n^2 + 6n + 1 --Quadratic equation
         // 9n^2 + 6n ---> 3n(3n+2) --> 9n^2 --> O(n^2)
-        
+
 
     }
 }
