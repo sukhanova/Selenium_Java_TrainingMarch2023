@@ -1,6 +1,7 @@
 package javasessions;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListRemoveConcept {
 
@@ -36,6 +37,18 @@ public class ArrayListRemoveConcept {
         nameList.add("Craig");
 
         System.out.println(nameList);
-
+        System.out.println("There is " + nameList.size() + " names in a list");
+        String namaToDelete = "Craig";
+        String str = "";
+        Iterator i = nameList.iterator();
+        while (i.hasNext()){
+            str = (String) i.next();
+            if(str.equals(namaToDelete)){
+                i.remove(); // delete both names
+               // break; // delete first match in ArrayList
+            }
+        }
+        System.out.println(nameList);
+        System.out.println("There is " + nameList.size() + " names in a list");
     }
 }
